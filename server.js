@@ -14,6 +14,8 @@ app.use(express.json());
 // Define the base path
 const BASE_PATH = "/home/admin/Smey/packet-html/";
 
+console.log("hello world");
+
 const getFoldersWithFiles = (dir) => {
   return new Promise((resolve, reject) => {
     fs.readdir(dir, { withFileTypes: true }, (err, entries) => {
@@ -187,6 +189,7 @@ app.post("/api/v1/writeFile", (req, res) => {
 
 // Start the server
 const PORT = 3000;
+
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });

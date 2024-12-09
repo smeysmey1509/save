@@ -14,7 +14,7 @@ app.use(express.json());
 // Define the base path
 const BASE_PATH = "/home/admin/Smey/packet-html/";
 
-console.log("hello world");
+console.log("Test Conflict");
 
 const getFoldersWithFiles = (dir) => {
   return new Promise((resolve, reject) => {

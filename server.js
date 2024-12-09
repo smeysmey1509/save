@@ -28,6 +28,8 @@ function generateName(length = 7) {
   return name;
 }
 
+console.log("smey");
+
 const getFoldersWithFiles = (dir) => {
   return new Promise((resolve, reject) => {
     fs.readdir(dir, { withFileTypes: true }, (err, entries) => {

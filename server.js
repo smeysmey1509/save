@@ -16,6 +16,20 @@ const BASE_PATH = "/home/admin/Smey/packet-html/";
 
 console.log("Test Conflict");
 
+function generateName(length = 7) {
+  const letters = "abcdefghijklmnopqrstuvwxyz";
+  let name = "";
+
+  for (let i = 0; i <= length; i++) {
+    const randomIndex = Math.floor(Math.random() * letters.length);
+    name += letters[randomIndex];
+  }
+
+  return name;
+}
+
+console.log("smey");
+
 const getFoldersWithFiles = (dir) => {
   return new Promise((resolve, reject) => {
     fs.readdir(dir, { withFileTypes: true }, (err, entries) => {
